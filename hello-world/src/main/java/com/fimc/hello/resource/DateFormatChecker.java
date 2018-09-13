@@ -1,6 +1,5 @@
 package com.fimc.hello.resource;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -46,7 +45,6 @@ public class DateFormatChecker {
             }
 
             if (!result.equals("invalid")) {
-                date = day + "-" + month + "-" + year;
                 SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");
                 Date dateFormatted = formatter.parse(date);
                 result = formatter.format(dateFormatted);
